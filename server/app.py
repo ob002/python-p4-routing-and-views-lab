@@ -15,6 +15,7 @@ def print_string(string):
 def count(num):
     return '\n'.join(str(i) for i in range(num)) + '\n'
 
+
 @app.route('/math/<int:num1>/<operation>/<int:num2>')
 def math(num1, operation, num2):
     if operation == '+':
